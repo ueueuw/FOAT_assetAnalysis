@@ -1,0 +1,91 @@
+<!-- templates/base.html -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <!-- 기존 head 내용 유지 -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}FOT{% endblock %}</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body {
+      font-family: 'Jua', sans-serif;
+    }
+    .content-transition {
+      transition: margin-left 0.3s ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+  <!-- 상단 네비게이션 바 수정 -->
+<div class="fixed top-0 left-0 right-0 z-50">
+  <div class="flex items-center h-14 bg-white shadow-sm px-4">
+    <button id="openSidebarBtn" class="focus:outline-none z-50">
+      <span data-lucide="menu" class="h-6 w-6"></span>
+    </button>
+    <div class="flex-1 text-center text-xl font-bold">
+      Finding Ore Asset Tool
+    </div>
+  </div>
+</div>
+
+  <!-- 사이드바 -->
+  <aside id="sidebar" class="fixed top-0 left-0 w-64 h-full bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out z-40">
+    <div class="pt-14"> <!-- 상단 네비게이션 바 높이만큼 패딩 추가 -->
+      <nav class="p-4">
+        <ul class="space-y-2">
+          <li>
+            <a href="{{ url_for('home') }}" class="w-full flex items-center justify-start text-left px-2 py-2 rounded hover:bg-gray-200">
+              <span data-lucide="home" class="mr-2 h-4 w-4"></span>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="{{ url_for('backtesting') }}" class="w-full flex items-center justify-start text-left px-2 py-2 rounded hover:bg-gray-200">
+              <span data-lucide="activity" class="mr-2 h-4 w-4"></span>
+              Backtesting
+            </a>
+          </li>
+          <li>
+            <a href="{{ url_for('analysis') }}" class="w-full flex items-center justify-start text-left px-2 py-2 rounded hover:bg-gray-200">
+              <span data-lucide="trending-up" class="mr-2 h-4 w-4"></span>
+              저평가 자산분석
+            </a>
+          </li>
+          <li>
+            <a href="{{ url_for('lab') }}" class="w-full flex items-center justify-start text-left px-2 py-2 rounded hover:bg-gray-200">
+              <span data-lucide="test-tube" class="mr-2 h-4 w-4"></span>
+              실험실
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </aside>
+
+  <!-- 메인 컨텐츠 -->
+  <main id="mainContent" class="pt-14 content-transition">
+    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+      <h1 class="text-2xl font-semibold text-gray-900 mb-6">{% block header %}대시보드{% endblock %}</h1>
+      {% block content %}{% endblock %}
+    </div>
+  </main>
+
+  <!-- Lucide 초기화 -->
+  <script>
+    window.onload = function() {
+      lucide.createIcons();
+    }
+  </script>
+  
+  <!-- 커스텀 JS -->
+  <script src="{{ url_for('static', filename='js/base.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!-- templates/lab.html -->
+
+{% extends "base.html" %}
+
+{% block title %}실험실 | 대시보드{% endblock %}
+{% block header %}실험실{% endblock %}
+
+{% block content %}
+  <div class="bg-white shadow rounded-lg p-6 w-full">
+    <h2 class="text-xl font-semibold mb-4">Fear&Greed Index에 따라 투자하면 좋을까요? 실험해보세요! </h2>
+    
+    <!-- 전략 입력 폼 -->
+    <form id="labForm" class="space-y-4">
+      <div>
+        <label for="buyThreshold" class="block text-sm font-medium text-gray-700">매수 FGI 임계값</label>
+        <input type="number" id="buyThreshold" name="buyThreshold" min="0" max="100" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2" required>
+      </div>
+      <div>
+        <label for="sellThreshold" class="block text-sm font-medium text-gray-700">매도 FGI 임계값</label>
+        <input type="number" id="sellThreshold" name="sellThreshold" min="0" max="100" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2" required>
+      </div>
+      <div class="flex space-x-4">
+        <div class="flex-1">
+          <label for="startDate" class="block text-sm font-medium text-gray-700">시작 날짜</label>
+          <input type="date" id="startDate" name="startDate" min="2011-01-03" max="2022-12-30" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2" required>
+        </div>
+        <div class="flex-1">
+          <label for="endDate" class="block text-sm font-medium text-gray-700">종료 날짜</label>
+          <input type="date" id="endDate" name="endDate" min="2011-01-03" max="2022-12-30" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2" required>
+        </div>
+      </div>
+      <button type="submit" id="backtestBtn" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" disabled>FGI 백테스팅</button>
+    </form>
+    
+    <!-- 전략 결과 이미지 및 지표 테이블 -->
+    <div id="backtestResult" class="mt-6 hidden">
+      <h3 class="text-lg font-semibold mb-4">백테스팅 결과</h3>
+      <img id="backtestPlot" src="" alt="백테스팅 결과 플롯" class="w-full rounded shadow">
+      
+      <!-- 백테스팅 메트릭스 테이블 -->
+      <div id="backtestMetrics" class="mt-4">
+        <table class="min-w-full border-collapse block md:table">
+          <thead class="block md:table-header-group">
+            <tr class="border border-gray-300 md:border-none block md:table-row">
+              <th class="p-2 bg-gray-200 font-bold md:border md:border-gray-300 text-left block md:table-cell">지표</th>
+              <th class="p-2 bg-gray-200 font-bold md:border md:border-gray-300 text-left block md:table-cell">시장</th>
+              <th class="p-2 bg-gray-200 font-bold md:border md:border-gray-300 text-left block md:table-cell">FGI 전략</th>
+            </tr>
+          </thead>
+          <tbody class="block md:table-row-group">
+            <tr class="border border-gray-300 md:border-none block md:table-row">
+              <td class="p-2 md:border md:border-gray-300 text-left block md:table-cell">총 수익률</td>
+              <td class="p-2 md:border md:border-gray-300 text-left block md:table-cell" id="marketTotalReturn">-</td>
+              <td class="p-2 md:border md:border-gray-300 text-left block md:table-cell" id="strategyTotalReturn">-</td>
+            </tr>
+            <tr class="border border-gray-300 md:border-none block md:table-row">
+              <td class="p-2 md:border md:border-gray-300 text-left block md:table-cell">연간 수익률</td>
+              <td class="p-2 md:border md:border-gray-300 text-left block md:table-cell" id="marketAnnualReturn">-</td>
+              <td class="p-2 md:border md:border-gray-300 text-left block md:table-cell" id="strategyAnnualReturn">-</td>
+            </tr>
+            <tr class="border border-gray-300 md:border-none block md:table-row">
+              <td class="p-2 md:border md:border-gray-300 text-left block md:table-cell">변동성</td>
+              <td class="p-2 md:border md:border-gray-300 text-left block md:table-cell" id="marketVolatility">-</td>
+              <td class="p-2 md:border md:border-gray-300 text-left block md:table-cell" id="strategyVolatility">-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- 실험실 페이지 전용 JS -->
+  <script src="{{ url_for('static', filename='js/lab.js') }}"></script>
+{% endblock %}

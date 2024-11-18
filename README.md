@@ -130,6 +130,7 @@
 
 ![자산군 순위](image/8.png)  
 *이미지8*
+
 원출처 : https://www.blackrock.com/corporate/insights/blackrock-investment-institute/interactive-charts/return-map
 
 ---
@@ -153,6 +154,7 @@ e.g.)
 *이미지9*
 
 > 위 이미지에서 볼 수 있듯이, 시장 수익률보다 낮은 수익을 기록하였습니다. 다른 기준도 시험해보세요!
+
 data set 원출처 : https://github.com/whit3rabbit/fear-greed-data/tree/main
 ---
 

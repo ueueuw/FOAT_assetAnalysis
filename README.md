@@ -160,8 +160,82 @@ e.g.)
 ---
 
 
-## 📄 라이선스
-[MIT 라이선스](./LICENSE)
+# LICENSE
+
+This project is distributed under the MIT License.
 
 ---
+
+## Third-party Libraries and Resources
+
+This project uses the following third-party libraries and resources. Each library/resource is subject to its own license, as described below.
+
+---
+
+### 1. Flask
+- URL: https://flask.palletsprojects.com/
+- License: BSD-3-Clause
+- Full text: https://opensource.org/licenses/BSD-3-Clause
+
+### 2. Flask-CORS
+- URL: https://flask-cors.readthedocs.io/
+- License: MIT License
+- Full text: https://github.com/corydolphin/flask-cors/blob/develop/LICENSE
+
+### 3. yfinance
+- URL: https://github.com/ranaroussi/yfinance
+- License: Apache License 2.0
+- Full text: https://www.apache.org/licenses/LICENSE-2.0
+
+### 4. pandas
+- URL: https://pandas.pydata.org/
+- License: BSD-3-Clause
+- Full text: https://opensource.org/licenses/BSD-3-Clause
+
+### 5. NumPy
+- URL: https://numpy.org/
+- License: BSD-3-Clause
+- Full text: https://opensource.org/licenses/BSD-3-Clause
+
+### 6. matplotlib
+- URL: https://matplotlib.org/
+- License: PSF-based License (Python Software Foundation)
+- Full text: https://matplotlib.org/stable/users/project/license.html
+
+### 7. requests
+- URL: https://docs.python-requests.org/
+- License: Apache License 2.0
+- Full text: https://www.apache.org/licenses/LICENSE-2.0
+
+### 8. bt (Backtesting Library)
+- URL: https://pmorissette.github.io/bt/
+- License: MIT License
+- Full text: https://github.com/pmorissette/bt/blob/master/LICENSE.txt
+
+---
+
+## External Resources
+
+### 9. Tailwind CSS
+- URL: https://tailwindcss.com/
+- License: MIT License
+- Full text: https://github.com/tailwindlabs/tailwindcss/blob/master/LICENSE
+
+### 10. Google Fonts (Jua, Nanum Gothic Coding)
+- URL: https://fonts.google.com/
+- License: SIL Open Font License 1.1
+- Full text: https://scripts.sil.org/OFL
+
+### 11. Lucide Icons
+- URL: https://lucide.dev/
+- License: ISC License
+- Full text: https://github.com/lucide-icons/lucide/blob/main/LICENSE
+
+---
+
+## Notes on Custom Code
+All custom Python and CSS code written for this project is distributed under the MIT License.
+
+If you have questions regarding license compatibility or usage, please contact the project maintainers.
+
 

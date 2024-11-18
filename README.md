@@ -1,7 +1,5 @@
 # FOAT - Finding Ore Assets Tool
 
-![FOAT Logo](./images/logo.png)
-
 ---
 
 ## 📢 소개

@@ -166,7 +166,7 @@ data set 원출처 : https://github.com/whit3rabbit/fear-greed-data/tree/main
 
 ---
 
-## 🚀 사용된 기술 스택
+## 🚀 기술 스택
 
 ## 🎨 **프론트엔드**
 - 🧾 **HTML5**: 템플릿 렌더링 및 UI 구조  
@@ -178,8 +178,6 @@ data set 원출처 : https://github.com/whit3rabbit/fear-greed-data/tree/main
     - 📂 `home.js`  
     - 📂 `lab.js`  
 
----
-
 ## ⚙️ **백엔드**
 - 🐍 **Python**: Flask 프레임워크 기반 웹 서버  
   - 주요 라이브러리:  
@@ -190,8 +188,6 @@ data set 원출처 : https://github.com/whit3rabbit/fear-greed-data/tree/main
     - 🕒 `datetime`, `time`: 시간 및 날짜 처리  
     - 🛠️ `logging`: 디버깅 및 로그 관리  
 - 🖌️ **Flask Template Engine**: Jinja2 기반 템플릿 렌더링  
-
----
 
 ## 💾 **데이터베이스**
 - 🏗️ 오버헤드를 줄이기 위해 로컬 데이터만 사용

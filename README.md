@@ -166,6 +166,39 @@ data set 원출처 : https://github.com/whit3rabbit/fear-greed-data/tree/main
 
 ---
 
+# 🚀 사용된 기술 스택
+
+## 🎨 **프론트엔드**
+- 🧾 **HTML5**: 템플릿 렌더링 및 UI 구조  
+- 🎨 **CSS3**: 스타일링 및 레이아웃  
+- 💻 **JavaScript**: 사용자 인터랙션 및 동적 콘텐츠 처리  
+  - 주요 파일:  
+    - 📂 `analysis.js`  
+    - 📂 `backtesting.js`  
+    - 📂 `home.js`  
+    - 📂 `lab.js`  
+
+---
+
+## ⚙️ **백엔드**
+- 🐍 **Python**: Flask 프레임워크 기반 웹 서버  
+  - 주요 라이브러리:  
+    - 🌐 `Flask`: 백엔드 애플리케이션 서버  
+    - 📊 `yfinance`, `bt`: 주식 데이터와 백테스팅  
+    - 📈 `pandas`, `numpy`: 데이터 처리 및 분석  
+    - 📉 `matplotlib`: 데이터 시각화  
+    - 🕒 `datetime`, `time`: 시간 및 날짜 처리  
+    - 🛠️ `logging`: 디버깅 및 로그 관리  
+- 🖌️ **Flask Template Engine**: Jinja2 기반 템플릿 렌더링  
+
+---
+
+## 💾 **데이터베이스**
+- 🏗️ 오버헤드를 줄이기 위해 로컬 데이터만 사용
+
+---
+
+
 
 # LICENSE
 

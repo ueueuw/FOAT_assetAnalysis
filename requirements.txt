@@ -1,0 +1,8 @@
+flask==3.0.2
+flask-cors==5.0.0
+matplotlib==3.8.0
+numpy==1.26.4
+yfinance==0.2.48
+pandas==2.2.3
+requests==2.31.0
+bt==1.1.0

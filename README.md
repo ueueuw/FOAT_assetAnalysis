@@ -11,15 +11,16 @@
 ## 🚀 설치 및 실행 방법
 
 ### 📋 요구 사항
-- **Python 버전:** 3.11 이상
+- **Python 버전:** 3.11
+- 패키지는 requirements.txt 참고 바람.
 
 ### 📥 설치 방법
 1. 첨부된 "foat" 폴더를 다운받아 원하는 디렉토리에 넣으십시오.
 2. **Anaconda**를 사용하는 경우:
-    - **Environments > Create**에서 가상환경(Python 3.13)을 만듭니다.
+    - **Environments > Create**에서 가상환경(Python 3.11)을 만듭니다.
     - 터미널에 다음 명령어를 입력합니다:
       ```bash
-      pip install flask flask-cors matplotlib numpy yfinance pandas requests bt
+      pip install flask==3.0.2 flask-cors==5.0.0 matplotlib==3.8.0 numpy==1.26.4 yfinance==0.2.48 pandas==2.2.3 requests==2.31.0 bt==1.1.0
       ```
     - 설치한 디렉토리로 이동합니다:
       ```bash

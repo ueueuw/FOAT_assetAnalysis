@@ -205,7 +205,7 @@ data set 원출처 : https://github.com/whit3rabbit/fear-greed-data/tree/main
 
 ## 🚀 기술 스택
 
-- MVC 패턴을 적용하고, UI/UX를 중점으로 두어 개발함.
+- MVC 패턴을 적용하고, UI/UX를 중점으로 두어 개발함. Anaconda를 모티브로 하여 웹 어플을 만들고자 했음.
 
 ## 🎨 **프론트엔드**
 - 🧾 **HTML5**: 템플릿 렌더링 및 UI 구조  

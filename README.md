@@ -164,7 +164,7 @@
 - 여러 버튼을 클릭하여 특정 해에 가장 저평가된 자산을 확인할 수 있습니다.
 
 ![자산군 순위](image/8.png)  
-*이미지8*
+
 
 원출처 : https://www.blackrock.com/corporate/insights/blackrock-investment-institute/interactive-charts/return-map
 
@@ -187,8 +187,11 @@ e.g.)
   - 탐욕 시(FGI 75) 매도
 - **지정 기간:** 2015.01.01 ~ 2022.01.01
 
+![실험실 전략 결과](image/19.png)  
+*실험실 탭에서 투자 파라미터 설정*
+
 ![실험실 전략 결과](image/9.png)  
-*이미지9*
+*실험 결과*
 
 > 위 이미지에서 볼 수 있듯이, 시장 수익률보다 낮은 수익을 기록하였습니다. 다른 기준도 시험해보세요!
 
